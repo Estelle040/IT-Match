@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Match | Premium</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --bg-main: #6f63c6;
+  --bg-dark: #5d52b8;
+  --bg-light: #8074d6;
+  --card-bg: #7469cf;
+  --text-light: #f4f4ff;
+  --shadow-dark: rgba(0,0,0,0.25);
+  --shadow-light: rgba(255,255,255,0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, var(--bg-main), var(--bg-dark));
+  min-height: 100vh;
+  color: var(--text-light);
+  padding-top: 4rem;
+}
+
+/* Neomorphism */
+.neo-box {
+  background: var(--card-bg);
+  border-radius: 25px;
+  box-shadow:
+    12px 12px 25px var(--shadow-dark),
+    -8px -8px 20px var(--shadow-light);
+  padding: 2rem;
+}
+
+.neo-button {
+  border-radius: 15px;
+  background: var(--bg-light);
+  color: white;
+  border: none;
+  box-shadow:
+    6px 6px 12px var(--shadow-dark),
+    -4px -4px 8px var(--shadow-light);
+  transition: 0.2s ease;
+}
+
+.neo-button:hover {
+  transform: translateY(-3px);
+}
+
+.navbar {
+  background: transparent;
+}
+
+.navbar-item {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar-burger span {
+  background-color: white;
+}
+
+.hero {
+  padding-top: 3rem;
+}
+
+.title, .subtitle {
+  color: white;
+}
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.card-soft {
+  border-radius: 20px;
+  padding: 2rem;
+  background: var(--card-bg);
+  box-shadow:
+    10px 10px 20px var(--shadow-dark),
+    -6px -6px 15px var(--shadow-light);
+  transition: 0.3s ease;
+}
+
+.card-soft:hover {
+  transform: translateY(-6px);
+}
+
+.footer {
+  background: transparent;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar is-fixed-top">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item has-text-weight-bold">
+IT Match
+</a>
+
+<a role="button"
+class="navbar-burger"
+aria-label="menu"
+aria-expanded="false"
+data-target="navMenu">
+<span></span>
+<span></span>
+<span></span>
+</a>
+</div>
+
+<div id="navMenu" class="navbar-menu">
+<div class="navbar-end">
+<a href="#about" class="navbar-item">О сервисе</a>
+<a href="#features" class="navbar-item">Возможности</a>
+<a href="#contacts" class="navbar-item">Контакты</a>
+<a class="button neo-button ml-4">Начать</a>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="neo-box has-text-centered">
+<h1 class="title is-2">
+Интеллектуальный подбор IT-специалистов
+</h1>
+<p class="subtitle is-5">
+Автоматическая аналитика, тестирование и прозрачный процесс найма
+</p>
+<button class="button neo-button is-medium mt-4">
+Попробовать бесплатно
+</button>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container">
+<div class="columns is-vcentered">
+<div class="column">
+<div class="neo-box">
+<h2 class="title is-4">О платформе</h2>
+<p>
+IT Match помогает компаниям находить сильных специалистов быстрее.
+Мы объединяем AI-анализ резюме, тестовые задания
+и сравнение кандидатов в одном интерфейсе.
+</p>
+</div>
+</div>
+
+<div class="column">
+<div class="neo-box has-text-centered">
+<i class="fas fa-user-astronaut fa-3x"></i>
+<p class="mt-3">Будущее найма уже здесь</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+<div class="container">
+<h2 class="title has-text-centered mb-6">
+Возможности платформы
+</h2>
+
+<div class="columns">
+<div class="column">
+<div class="card-soft has-text-centered">
+<i class="fas fa-robot fa-2x mb-3"></i>
+<h3 class="title is-5">AI-анализ</h3>
+<p>Интеллектуальный отбор по навыкам и релевантности.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="card-soft has-text-centered">
+<i class="fas fa-code fa-2x mb-3"></i>
+<h3 class="title is-5">Технические тесты</h3>
+<p>Проверка реальных компетенций кандидатов.</p>
+</div>
+</div>
+
+<div class="column">
+<div class="card-soft has-text-centered">
+<i class="fas fa-chart-line fa-2x mb-3"></i>
+<h3 class="title is-5">Аналитика</h3>
+<p>Сравнение, статистика и эффективность найма.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+<div class="container">
+<div class="neo-box has-text-centered">
+<h2 class="title is-4">
+Начните подбор уже сегодня
+</h2>
+<button class="button neo-button is-medium mt-3">
+Зарегистрироваться
+</button>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacts" class="footer">
+<p><strong>IT Match</strong> © 2025</p>
+<p>contact@itmatch.ru</p>
+<p>
+<i class="fab fa-telegram mr-3"></i>
+<i class="fab fa-linkedin mr-3"></i>
+<i class="fab fa-github"></i>
+</p>
+</footer>
+
+<!-- BURGER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  burgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const target = el.dataset.target;
+      const menu = document.getElementById(target);
+      el.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+</body>
+</html>
