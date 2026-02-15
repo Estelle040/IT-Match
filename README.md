@@ -14,4 +14,4 @@ Bulma
 ![Untitled.png](Untitled.png)
 
 ## Ссылка на GitHub Pages
-(вставить ссылку)
+https://estelle040.github.io/IT-Match/
