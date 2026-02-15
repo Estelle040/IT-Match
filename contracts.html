@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — IT Match</title>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+<style>
+body { background: linear-gradient(135deg,#140f2d,#2b1e5a,#1a133d); color:#f5f3ff; }
+.navbar { background: rgba(20,15,45,0.8); backdrop-filter: blur(12px); }
+.navbar-item { color:#ddd6fe; }
+.navbar-item.is-active { color:#c084fc; }
+.glass-card { background:rgba(255,255,255,0.06); padding:2rem; border-radius:20px; backdrop-filter:blur(12px); box-shadow:0 15px 40px rgba(168,85,247,0.2); }
+.button.is-purple { background:linear-gradient(135deg,#9333ea,#a855f7); border:none; color:white; }
+.footer { background:rgba(0,0,0,0.3); color:#c4b5fd; }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar is-fixed-top">
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="index.html"><strong>IT Match</strong></a>
+</div>
+<div class="navbar-menu is-active">
+<div class="navbar-end">
+<a href="index.html" class="navbar-item">Главная</a>
+<a href="faq.html" class="navbar-item">FAQ</a>
+<a href="contacts.html" class="navbar-item is-active">Контакты</a>
+</div>
+</div>
+</div>
+</nav>
+
+<section class="section" style="padding-top:6rem;">
+<div class="container">
+<div class="columns">
+
+<div class="column is-6">
+<div class="glass-card">
+<h2 class="title is-4 has-text-white">Свяжитесь с нами</h2>
+
+<form>
+<div class="field">
+<label class="label has-text-white">Имя</label>
+<input class="input" type="text" required>
+</div>
+
+<div class="field">
+<label class="label has-text-white">Email</label>
+<input class="input" type="email" required>
+</div>
+
+<div class="field">
+<label class="label has-text-white">Тема</label>
+<div class="select is-fullwidth">
+<select required>
+<option value="" disabled selected>Выберите тему</option>
+<option>Подбор специалиста</option>
+<option>Партнёрство</option>
+<option>Технический вопрос</option>
+</select>
+</div>
+</div>
+
+<div class="field">
+<label class="label has-text-white">Сообщение</label>
+<textarea class="textarea" required></textarea>
+</div>
+
+<div class="field">
+<label class="checkbox has-text-white">
+<input type="checkbox" required>
+Согласен на обработку данных
+</label>
+</div>
+
+<button class="button is-purple is-fullwidth">Отправить</button>
+</form>
+</div>
+</div>
+
+<div class="column is-6">
+<div class="glass-card">
+<h3 class="title is-4 has-text-white">Контакты</h3>
+<p>Email: info@hiretech.ru</p>
+<p>Москва, IT-кластер</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="footer has-text-centered">
+© 2025 IT Match
+</footer>
+
+</body>
+</html>
