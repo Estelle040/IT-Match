@@ -43,42 +43,46 @@ body { background: linear-gradient(135deg,#140f2d,#2b1e5a,#1a133d); color:#f5f3f
 <div class="glass-card">
 <h2 class="title is-4 has-text-white">Свяжитесь с нами</h2>
 
-<form>
+<form id="contactForm" novalidate>
 <div class="field">
-<label class="label has-text-white">Имя</label>
-<input class="input" type="text" required>
+<label class="label has-text-white" for="fullname">Имя</label>
+<input class="input" type="text" id="fullname" name="fullname" placeholder="Иванов Иван" required>
+<p class="help" id="fullnameHelp">Введите имя и фамилию</p>
 </div>
 
 <div class="field">
-<label class="label has-text-white">Email</label>
-<input class="input" type="email" required>
+<label class="label has-text-white" for="email">Email</label>
+<input class="input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+<p class="help" id="emailHelp">Введите корректный email</p>
 </div>
 
 <div class="field">
-<label class="label has-text-white">Тема</label>
+<label class="label has-text-white" for="topic">Тема</label>
 <div class="select is-fullwidth">
-<select required>
+<select id="topic" name="topic" required>
 <option value="" disabled selected>Выберите тему</option>
 <option>Подбор специалиста</option>
 <option>Партнёрство</option>
 <option>Технический вопрос</option>
 </select>
 </div>
+<p class="help" id="topicHelp">Выберите тему обращения</p>
 </div>
 
 <div class="field">
-<label class="label has-text-white">Сообщение</label>
-<textarea class="textarea" required></textarea>
+<label class="label has-text-white" for="message">Сообщение</label>
+<textarea class="textarea" id="message" name="message" placeholder="Коротко опишите запрос" required></textarea>
+<p class="help" id="messageHelp">До 500 символов</p>
 </div>
 
 <div class="field">
 <label class="checkbox has-text-white">
-<input type="checkbox" required>
+<input type="checkbox" id="agreement" name="agreement" required>
 Согласен на обработку данных
 </label>
 </div>
 
-<button class="button is-purple is-fullwidth">Отправить</button>
+<button class="button is-purple is-fullwidth" type="submit">Отправить</button>
 </form>
 </div>
 </div>
@@ -98,6 +102,9 @@ body { background: linear-gradient(135deg,#140f2d,#2b1e5a,#1a133d); color:#f5f3f
 <footer class="footer has-text-centered">
 © 2025 IT Match
 </footer>
+
+<script src="scripts/validation.js"></script>
+<script src="scripts/consoleLogger.js"></script>
 
 </body>
 </html>
